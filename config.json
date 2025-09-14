@@ -1,0 +1,452 @@
+{
+  "version": "2025.09.14-1",
+  "systemPrompt": "You are the CView Assistant for the fictional Seaview residential estate. Operate as a resident co-pilot: concise, practical, and friendly-professional. Always answer in the user's requested language when provided, otherwise use English. Personalise answers using the available profile context: {name}, {houseType}. Prioritise the built-in knowledgeBase facts. If a user question is clearly answered by the knowledgeBase, respond directly. If not found, say you cannot find an exact match in the resident guide and suggest nearby topics like bins, broadband, GP, schools, clubs, transport, or house info. Do not fabricate suppliers or phone numbers not present in the knowledgeBase. If the user asks for pubs or coffee, it is acceptable to use the funOverrides response.",
+  "knowledgeBase": {
+    "utilities": [
+      {
+        "q": "How do I set up electricity?",
+        "a": "Seaview is connected via ESB Networks. Call 1800 372 757 with your meter number to activate. Choose a supplier such as Electric Ireland, SSE Airtricity, or Energia."
+      },
+      {
+        "q": "How do I set up gas?",
+        "a": "Gas is available via Gas Networks Ireland. Call 1800 464 464 to open your connection, then choose a supplier such as Bord Gáis Energy or Flogas."
+      },
+      {
+        "q": "How do I set up broadband?",
+        "a": "Fibre broadband up to 1 Gbps is available from Virgin Media, Eir, and SIRO. Provide your Eircode when signing up."
+      },
+      {
+        "q": "How do I set up refuse collection?",
+        "a": "Panda, Greyhound, and CountryClean operate in Seaview. Register online using your Eircode."
+      }
+    ],
+    "meters": [
+      {
+        "q": "How do I read my electricity meter?",
+        "a": "Open the external meter box. Record the first 5 digits on the display and ignore decimals."
+      },
+      {
+        "q": "How do I read my gas meter?",
+        "a": "The gas meter is usually in a ground box near the front path. Note the 5 black digits only."
+      }
+    ],
+    "homeCare": [
+      {
+        "q": "How do I bleed a radiator?",
+        "a": "Use a radiator key on the top valve and turn slowly until air hisses out. Close when water appears. Keep a cloth handy."
+      },
+      {
+        "q": "How do I reset a tripped fuse?",
+        "a": "Go to the fuse board in the hallway. Identify the switch in the down position and push it up to reset."
+      },
+      {
+        "q": "How do I repressurise the boiler?",
+        "a": "Find the boiler filling loop. Open both valves slightly until the pressure reaches 1.0 to 1.5 bar. Close both valves tightly."
+      },
+      {
+        "q": "Where can I find appliance manuals?",
+        "a": "Digital copies of oven, hob, washing machine, and boiler manuals are available in the Seaview Resident Portal."
+      }
+    ],
+    "waste": [
+      {
+        "q": "When are bins collected?",
+        "a": "General waste on Thursdays, recycling every second Tuesday, and organic waste on Mondays."
+      },
+      {
+        "q": "What goes in each bin?",
+        "a": "Black bin: non-recyclables. Green bin: paper, cardboard, plastics 1 to 7, tins. Brown bin: food scraps, grass cuttings, compostable packaging."
+      },
+      {
+        "q": "Where do I bring hazardous waste?",
+        "a": "Bring paint, batteries, and electronics to Harbour Recycling Centre, 5.2 km away."
+      }
+    ],
+    "transport": [
+      {
+        "q": "Is there a bus service near Seaview?",
+        "a": "Yes. Route 207 stops 300 m from the estate entrance and runs every 20 minutes to the city centre. Typical journey is 25 minutes."
+      },
+      {
+        "q": "Is there a cycle lane into the city?",
+        "a": "Yes. A dedicated cycle route parallels the main road. It is 6.2 km into the city, about 20 minutes by bike."
+      },
+      {
+        "q": "Where is the nearest train station?",
+        "a": "The local station is 7 km away, about 12 minutes by car, with direct services to Dublin, Limerick, and Mallow."
+      },
+      {
+        "q": "Are taxis available locally?",
+        "a": "Harbour Cabs and City Taxis service Seaview. Save their numbers in your phone for convenience."
+      }
+    ],
+    "healthcare": [
+      {
+        "q": "Where is the nearest GP?",
+        "a": "Seaview Medical Practice is 1.4 km away with 4 GPs and a nurse clinic."
+      },
+      {
+        "q": "Where is the nearest dentist?",
+        "a": "Harbour Dental Clinic is 2.6 km away and offers family and cosmetic dentistry."
+      },
+      {
+        "q": "Where is the nearest pharmacy?",
+        "a": "Oak Pharmacy is 1.2 km away beside St. Mary’s Primary."
+      },
+      {
+        "q": "Where is the nearest hospital?",
+        "a": "Cork University Hospital is 9 km away, about 20 minutes by car."
+      },
+      {
+        "q": "Is there veterinary care nearby?",
+        "a": "Harbour Vets is 2.3 km from Seaview."
+      }
+    ],
+    "schools": [
+      {
+        "q": "What primary schools are nearby?",
+        "a": "St. Mary’s Primary School is 1.2 km from Seaview and is co-educational for ages 5 to 12."
+      },
+      {
+        "q": "What secondary schools are nearby?",
+        "a": "Seaview Secondary College is 2.8 km away with modern labs and sports facilities."
+      },
+      {
+        "q": "Is there childcare or Montessori nearby?",
+        "a": "Little Oaks Montessori is 700 m away for ages 3 to 5. Seaview After-School Club is 1.3 km away for ages 5 to 12."
+      }
+    ],
+    "sports": [
+      {
+        "q": "Is there a GAA club nearby?",
+        "a": "Seaview GAA Club is 2 km away and offers Gaelic football, hurling, and camogie with two full-size pitches including one floodlit."
+      },
+      {
+        "q": "Is there a soccer club nearby?",
+        "a": "Harbour Rovers Soccer Club is 3.5 km away with grass and astro-turf pitches for underage through senior."
+      },
+      {
+        "q": "Is there a rugby club nearby?",
+        "a": "Corkside Rugby Club is 5 km away with senior men’s and women’s teams and youth rugby."
+      },
+      {
+        "q": "Is there a leisure centre?",
+        "a": "Seaview Leisure Centre is 1.8 km away with a swimming pool, gym, and indoor sports hall."
+      },
+      {
+        "q": "Are there walking routes?",
+        "a": "A coastal path begins 1.5 km from the estate and forms a 7 km loop with harbour views."
+      }
+    ],
+    "worship": [
+      {
+        "q": "Where is the nearest Catholic Church?",
+        "a": "St. Brigid’s Catholic Church is 1 km away with Mass at 9 am and 11 am on Sundays."
+      },
+      {
+        "q": "Where is the nearest Church of Ireland?",
+        "a": "Seaview Community Church is 2.2 km away with a 10:30 am Sunday service."
+      },
+      {
+        "q": "Is there an Islamic Centre nearby?",
+        "a": "Al Noor Islamic Centre is 4.5 km away with daily prayers and Friday Jummah at 1 pm."
+      },
+      {
+        "q": "Is there a Buddhist or meditation centre nearby?",
+        "a": "Seaview Meditation and Buddhist Centre is 3 km away with weekly mindfulness classes."
+      }
+    ],
+    "localLiving": [
+      {
+        "q": "Where are the nearest supermarkets?",
+        "a": "SuperValu is 1.5 km away. Lidl and Aldi are both within a 10 minute drive."
+      },
+      {
+        "q": "Where can I get a good coffee?",
+        "a": "Brew & Co. is a 12 minute walk and is popular for flat whites and pastries."
+      },
+      {
+        "q": "Where can I find a good family friendly pub?",
+        "a": "The Greenhouse Pub is 2.5 km away with live music on weekends."
+      },
+      {
+        "q": "Are there playgrounds or parks?",
+        "a": "Seaview Green is in the centre of the estate. Riverside Park is 3 km away with a running track and fields."
+      }
+    ],
+    "community": [
+      {
+        "q": "Is there a Residents Association?",
+        "a": "Yes. Email community@seaview.ie to join."
+      },
+      {
+        "q": "Is there a community WhatsApp group?",
+        "a": "Yes. A QR code is provided in the welcome pack for Seaview residents."
+      },
+      {
+        "q": "Are there regular events?",
+        "a": "Typical events include a summer BBQ in August, a Halloween parade, and a December carol service."
+      }
+    ],
+    "bills": [
+      {
+        "q": "How do I pay Local Property Tax?",
+        "a": "Register and pay at revenue.ie using your Eircode."
+      },
+      {
+        "q": "Where can I charge an EV?",
+        "a": "Two ESB chargers are at Harbour Shopping Centre, 1.8 km away."
+      },
+      {
+        "q": "Any basic energy saving tips?",
+        "a": "Bleed radiators annually, close curtains at night, and avoid leaving appliances on standby."
+      }
+    ],
+    "safety": [
+      {
+        "q": "What are the emergency numbers?",
+        "a": "Dial 112 or 999 for police, fire, or ambulance."
+      },
+      {
+        "q": "Where is the nearest Garda station?",
+        "a": "Harbour Garda Station is 3.4 km away."
+      },
+      {
+        "q": "Where is the nearest fire station?",
+        "a": "City Fire Station is 5.8 km away."
+      },
+      {
+        "q": "Is there a 24 or 7 estate line?",
+        "a": "Yes. Call 1800 654 321 for urgent estate issues."
+      }
+    ],
+    "history": [
+      {
+        "q": "What is the history of Seaview?",
+        "a": "Seaview originated as O’Driscoll farmland in the 19th century, with orchards and cider production into the 1930s. Coastal paths became popular in the 1980s. Stone boundary walls from the farm were preserved as part of green spaces during development."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "When is recycling collected?",
+        "a": "Every second Tuesday."
+      },
+      {
+        "q": "Is there a nearby playground?",
+        "a": "Yes. The central green inside the estate has a playground."
+      },
+      {
+        "q": "How do I set up bins?",
+        "a": "Register with Panda, Greyhound, or CountryClean using your Eircode."
+      },
+      {
+        "q": "What clubs can my kids join?",
+        "a": "GAA, soccer, rugby, and swimming are all within 5 km of Seaview."
+      }
+    ]
+  },
+  "funOverrides": [
+    {
+      "pattern": "(pint|pub|guinness|beer)",
+      "answer": "You have a few strong options near Seaview. The Greenhouse Pub is 2.5 km with live music on weekends. Harbour Bar is 4 km and great for match days. Shortest walk is O’Malley’s Corner House at only 900 metres. They pour a seriously good pint of Guinness. The only problem is there is a taste of more off it. If you head there, tell Paddy I was asking for him!"
+    },
+    {
+      "pattern": "(coffee|flat white|cappuccino|cafe)",
+      "answer": "Brew & Co. is a 12 minute walk. The flat white is dangerously addictive. You will have a full loyalty card before the week is out."
+    },
+    {
+      "pattern": "(takeaway|take away|delivery|pizza|chinese|indian)",
+      "answer": "Harbour Tandoori is about 3 km for excellent butter chicken. Dragon Wok is 2.5 km for a quick chow mein. Mario’s Pizzeria delivers to Seaview in under 15 minutes."
+    },
+    {
+      "pattern": "(park|playground|kids)",
+      "answer": "Central Green inside Seaview has swings and a loop path. For a bigger run around, Riverside Park is 3 km away. Be prepared for negotiations when it is time to leave."
+    },
+    {
+      "pattern": "(walk|coastal|trail|stroll)",
+      "answer": "A coastal path starts 1.5 km from the estate. It is a 7 km loop with big sky and sea air. Ideal for clearing the head."
+    },
+    {
+      "pattern": "(late.?night|shop|milk|bread)",
+      "answer": "O’Connell’s Corner Shop is 1.1 km and open until midnight. You will go in for milk and leave with half the sweet aisle. It happens."
+    },
+    {
+      "pattern": "(gym|pool|fitness)",
+      "answer": "Seaview Leisure Centre is 1.8 km with a pool and classes. The hardest workout in Seaview remains carrying all the Aldi bags in one trip."
+    }
+  ],
+  "poi": {
+    "estateCentre": {
+      "lat": 51.895,
+      "lng": -8.47
+    },
+    "items": [
+      {
+        "name": "St. Mary’s Primary School",
+        "category": "Education",
+        "lat": 51.897,
+        "lng": -8.468,
+        "description": "Co-ed, ages 5 to 12",
+        "walkMins": 15
+      },
+      {
+        "name": "Little Oaks Montessori",
+        "category": "Education",
+        "lat": 51.896,
+        "lng": -8.472,
+        "description": "Ages 3 to 5",
+        "walkMins": 10
+      },
+      {
+        "name": "Seaview Secondary College",
+        "category": "Education",
+        "lat": 51.892,
+        "lng": -8.475,
+        "description": "Labs and sports hall",
+        "walkMins": 30
+      },
+      {
+        "name": "Bus Stop Route 207",
+        "category": "Transport",
+        "lat": 51.894,
+        "lng": -8.469,
+        "description": "Every 20 minutes"
+      },
+      {
+        "name": "SuperValu Seaview",
+        "category": "Shops",
+        "lat": 51.891,
+        "lng": -8.466,
+        "description": "1.5 km"
+      },
+      {
+        "name": "Lidl",
+        "category": "Shops",
+        "lat": 51.889,
+        "lng": -8.472,
+        "description": "10 minute drive"
+      },
+      {
+        "name": "Aldi",
+        "category": "Shops",
+        "lat": 51.888,
+        "lng": -8.469,
+        "description": "10 minute drive"
+      },
+      {
+        "name": "Harbour Vets",
+        "category": "Health",
+        "lat": 51.8925,
+        "lng": -8.462,
+        "description": "Veterinary clinic"
+      },
+      {
+        "name": "Seaview Medical Practice",
+        "category": "Health",
+        "lat": 51.8932,
+        "lng": -8.463,
+        "description": "GP clinic"
+      },
+      {
+        "name": "Harbour Dental Clinic",
+        "category": "Health",
+        "lat": 51.8942,
+        "lng": -8.461,
+        "description": "Dentist"
+      },
+      {
+        "name": "O’Malley’s Corner House",
+        "category": "Leisure",
+        "lat": 51.8958,
+        "lng": -8.465,
+        "description": "900 m. Great pint."
+      },
+      {
+        "name": "Seaview GAA Club",
+        "category": "Sports",
+        "lat": 51.898,
+        "lng": -8.473,
+        "description": "Two pitches, one floodlit"
+      },
+      {
+        "name": "Harbour Rovers Soccer Club",
+        "category": "Sports",
+        "lat": 51.8973,
+        "lng": -8.477,
+        "description": "Grass and astro"
+      },
+      {
+        "name": "Corkside Rugby Club",
+        "category": "Sports",
+        "lat": 51.8915,
+        "lng": -8.478,
+        "description": "Senior and youth"
+      },
+      {
+        "name": "ESB Chargers - Harbour Centre",
+        "category": "EV",
+        "lat": 51.889,
+        "lng": -8.471,
+        "description": "Two fast chargers"
+      },
+      {
+        "name": "St. Brigid’s Church",
+        "category": "Worship",
+        "lat": 51.8975,
+        "lng": -8.467,
+        "description": "Mass Sun 9 and 11"
+      },
+      {
+        "name": "Seaview Community Church",
+        "category": "Worship",
+        "lat": 51.8969,
+        "lng": -8.464,
+        "description": "Service Sun 10:30"
+      },
+      {
+        "name": "Al Noor Islamic Centre",
+        "category": "Worship",
+        "lat": 51.893,
+        "lng": -8.459,
+        "description": "Friday Jummah 1 pm"
+      },
+      {
+        "name": "Seaview Leisure Centre",
+        "category": "Leisure",
+        "lat": 51.8953,
+        "lng": -8.462,
+        "description": "Gym and pool"
+      },
+      {
+        "name": "Seaview Green Playground",
+        "category": "Leisure",
+        "lat": 51.8951,
+        "lng": -8.468,
+        "description": "Slides and swings"
+      },
+      {
+        "name": "Riverside Park",
+        "category": "Leisure",
+        "lat": 51.8921,
+        "lng": -8.4699,
+        "description": "Running track and fields"
+      }
+    ]
+  },
+  "features": {
+    "maps": {
+      "provider": "google",
+      "defaultZoom": 15
+    },
+    "languages": [
+      "en",
+      "ga",
+      "fr",
+      "es",
+      "pl",
+      "pt",
+      "de",
+      "it"
+    ]
+  }
+}
